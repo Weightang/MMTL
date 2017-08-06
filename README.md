@@ -1,7 +1,18 @@
 # MMTL
-A list that must be mastered, which will help you learn and understand data structures and algorithms.
 
 
+### 在《Cracking the coding interview》一书中一定要掌握的清单列表
+|数据结构|算法|概念
+|-------|----|----
+|链表|广度优先搜索|位操作
+|二叉树|深度优先算法|单例设计模式
+|单词查找树（trie)|二分查找|工厂设计模式
+|栈|归并排序|内存（栈和堆）
+|队列|快速排序|归递
+|向量/数据列表|树的插入/查找等|大O时间
+|散列表|||
+
+### 说明
 ## License
 
 ```
