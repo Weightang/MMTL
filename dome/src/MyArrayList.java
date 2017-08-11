@@ -84,17 +84,56 @@ public class MyArrayList<T> implements IList<T> {
 
 
     @Override
-    public void reverse() {
+    public Node<T> reverse() {
+        Node<T> newHead = null;
+        while (head != null) {
+            Node<T> next = head.next;
+            head.next = newHead;
+            newHead = head;
+            head = next;
+        }
+        return newHead;
+
+
+
 
     }
 
     @Override
     public int Indexof(Node x) {
-        return 0;
+        int index=0;
+        if (x==head){
+            return 0;
+        }
+        Node<T>  tNode = head;
+        while (tNode.next!=null){
+         if (x==tNode.next){
+             break;
+         }
+         tNode=tNode.next;
+         index++;
+
+        }
+        return index;
     }
 
     @Override
     public void insert(int i, Node x) throws Exception {
+        int index =0;
+        if (i==0){
+            head=x;
+        }
+        Node<T> tNode=head;
+        while (tNode.next!=null){
+            if (i==index){
+                x.next=tNode.next;
+                tNode.next=x;
+                break;
+            }
+            tNode=tNode.next;
+            index++;
+        }
+
 
     }
 

@@ -23,6 +23,6 @@
 
 
         //倒序
-        void reverse();
+        Node<T> reverse();
 
     }
