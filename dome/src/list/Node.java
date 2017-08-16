@@ -1,3 +1,5 @@
+package list;
+
 public class Node<T> {
 
     public T t;

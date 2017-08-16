@@ -1,3 +1,5 @@
+package list;
+
 import java.util.ArrayList;
 
 /**
@@ -115,7 +117,7 @@ public class MyArrayList<T> implements IList<T> {
         if (x==head){
             return 0;
         }
-        Node<T>  tNode = head;
+        Node<T> tNode = head;
         while (tNode.next!=null){
          if (x==tNode.next){
              break;

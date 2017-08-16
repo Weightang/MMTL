@@ -1,4 +1,6 @@
-  public interface IList<T> {
+package list;
+
+public interface IList<T> {
         //置空操作
         void clean();
 
