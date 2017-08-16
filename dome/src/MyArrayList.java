@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by tang on 2017/7/8.
  */
@@ -12,7 +14,15 @@ public class MyArrayList<T> implements IList<T> {
     }
 
     @Override
-    public void clear() {
+    public void clean() {
+        Node<T> newHead = null;
+        while (head != null) {
+            Node<T> next = head.next;
+            head.next = newHead;
+            newHead = null;
+            head = next;
+        }
+
 
     }
 

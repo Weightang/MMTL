@@ -1,6 +1,6 @@
   public interface IList<T> {
         //置空操作
-        void clear();
+        void clean();
 
         //判空操作
         boolean isEmpty();
