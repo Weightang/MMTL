@@ -5,18 +5,18 @@ import java.util.ArrayList;
 /**
  * Created by tang on 2017/7/8.
  */
-public class MyArrayList<T> implements IList<T> {
+public class MyLinkedList<T> implements IList<T> {
 
     private Node<T> head;//头部
     private int size = 0;
 
 
-    public MyArrayList() {
+    public MyLinkedList() {
         this.head = null;
     }
 
     @Override
-    public void clean() {
+    public void clear() {
         Node<T> newHead = null;
         while (head != null) {
             Node<T> next = head.next;
